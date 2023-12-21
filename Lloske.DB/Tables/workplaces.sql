@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[workplaces]
+(
+	[Id] INT NOT NULL PRIMARY KEY
+	[Name] INT NOT NULL
+	[Id] INT NOT NULL PRIMARY KEY
+)

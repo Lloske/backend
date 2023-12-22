@@ -1,4 +1,20 @@
 ﻿CREATE TABLE [dbo].[user_human_ressources_information]
 (
-	[Id] INT NOT NULL PRIMARY KEY
+	[Id] INT NOT NULL IDENTITY,
+	[Birthdate] DATETIME,
+	[Birthplace]  NVARCHAR(100),
+	[Birthland] INT,
+	[Nationality] INT,
+	[Gender] INT,
+	[Address_street] NVARCHAR(100),
+	[Adress_postal_code] INT,
+	[Adress_city] NVARCHAR(50),
+	[Adress_country] INT,
+	[Iban] NVARCHAR(50),
+	[Bic] NVARCHAR(50),
+	[Social_security_number] INT,
+	[User_note] NVARCHAR(max),
+	[FK_id_user_personnal_information] INT NOT NULL,
+	CONSTRAINT PK_User_human_ressources_information PRIMARY KEY ([Id]),
+	CONSTRAINT FK_User_personnal_inforamtion_User_contract_information FOREIGN KEY (FK_id_user_personnal_information) REFERENCES [user_personnal_information]([Id]),
 )

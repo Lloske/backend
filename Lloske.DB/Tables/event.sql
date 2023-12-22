@@ -1,4 +1,20 @@
 ﻿CREATE TABLE [dbo].[event]
 (
-	[Id] INT NOT NULL PRIMARY KEY
+	[Id] INT NOT NULL IDENTITY,
+	[Start_date] DATETIME NOT NULL,
+	[Start_time] DATETIME NOT NULL,
+	[End_time] DATETIME NOT NULL,
+	[Break_duration] INT NOT NULL,
+	[Meal] INT NOT NULL,
+	[Event_note] NVARCHAR(max),
+	[Week_number] INT NOT NULL,
+	[FK_id_user_personnal_information] INT NOT NULL,
+	[FK_id_event_team] INT NOT NULL,
+	[FK_id_event_absence] INT NOT NULL,
+	[FK_id_workplace] INT NOT NULL,
+	CONSTRAINT PK_Event PRIMARY KEY ([Id]),
+	CONSTRAINT FK_Event_User_personnal_information FOREIGN KEY (FK_id_user_personnal_information) REFERENCES [user_personnal_information]([Id]),
+	CONSTRAINT FK_Event_Team FOREIGN KEY (FK_id_event_team) REFERENCES [event_team]([Id]),
+	CONSTRAINT FK_Event_Event_absence FOREIGN KEY (FK_id_event_absence) REFERENCES [event_absence]([Id]),
+	CONSTRAINT FK_Event_Workplaces FOREIGN KEY (FK_id_workplace) REFERENCES [workplaces]([Id]),
 )

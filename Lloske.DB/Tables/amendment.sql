@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[amendment]
 (
-	[Id] INT NOT NULL IDENTITY,
-	[Type] INT NOT NULL,
-	[Amendment_start] DATETIME NOT NULL,
-	[Amendment_end] DATETIME NOT NULL,
+	[Id] UNIQUEIDENTIFIER NOT NULL,
+	[Type] SMALLINT NOT NULL,
+	[Amendment_start] DATE NOT NULL,
+	[Amendment_end] DATE NOT NULL,
 	[Amendment_hours] INT NOT NULL,
-	[Id_User_payroll_data] INT NOT NULL,
+	[FK_Id_User_payroll_data] UNIQUEIDENTIFIER NOT NULL,
 	CONSTRAINT PK_Amendment PRIMARY KEY ([Id]),
-	CONSTRAINT FK_Amendment_User_Payroll_Data FOREIGN KEY ([Id_User_payroll_data]) REFERENCES [user_payroll_data]([Id])
+	CONSTRAINT FK_Amendment_User_Payroll_Data FOREIGN KEY ([FK_Id_User_payroll_data]) REFERENCES [user_payroll_data]([Id])
 )

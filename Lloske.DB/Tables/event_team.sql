@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[event_team]
 (
-	[Id] INT NOT NULL IDENTITY,
+	[Id] UNIQUEIDENTIFIER NOT NULL,
 	[Name] NVARCHAR(100),
-	[Break_time] DECIMAL NOT NULL,
+	[Break_time] INT NOT NULL,
 	CONSTRAINT PK_Event_team PRIMARY KEY ([Id]),
 )

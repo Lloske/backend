@@ -75,4 +75,10 @@
     <Build Include="Tables\organizations.sql" />
     <Build Include="Tables\MM_workplaces_user.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\InitDB.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lloske.DB.publish.xml" />
+  </ItemGroup>
 </Project>

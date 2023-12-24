@@ -1,6 +1,5 @@
 ﻿CREATE TABLE [dbo].[MM_workplaces_user]
 (
-	[Id] UNIQUEIDENTIFIER NOT NULL,
 	[Main_workplace] BIT NOT NULL,
 	[Permission_level] SMALLINT NOT NULL,
 	[Visibility] BIT NOT NULL,

@@ -1,9 +1,5 @@
 E:\Code\Lloske\backend\Lloske.DB\bin\Debug\Lloske.DB.dacpac
 E:\Code\Lloske\backend\Lloske.DB\obj\Debug\Lloske.DB.sqlproj.AssemblyReference.cache
-E:\Code\Lloske\backend\Lloske.DB\obj\Debug\Model.xml
-E:\Code\Lloske\backend\Lloske.DB\obj\Debug\refactor.xml
-E:\Code\Lloske\backend\Lloske.DB\obj\Debug\postdeploy.sql
-E:\Code\Lloske\backend\Lloske.DB\obj\Debug\predeploy.sql
 E:\Code\Lloske\backend\Lloske.DB\obj\Debug\Lloske.DB.dll
 E:\Code\Lloske\backend\Lloske.DB\obj\Debug\Lloske.DB.pdb
 E:\Code\Lloske\backend\Lloske.DB\bin\Debug\Lloske.DB.dll

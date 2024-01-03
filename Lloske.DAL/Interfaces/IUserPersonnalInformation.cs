@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lloske.DAL.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Lloske.DAL.Interfaces
 {
-    internal interface IUser_personnal_information
+    public interface IUserPersonnalInformation : ICrud<int, UserPersonnalInformation>
     {
+
     }
 }

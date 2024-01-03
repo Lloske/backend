@@ -11,7 +11,7 @@ namespace Lloske.DAL.Interfaces
     // Ainsi, un Repository qui n'aurait besoin que des Get, n'implémenterait que IRead
     // Résumé des 2 lignes ci dessus: plutot que ICRUD implémente toutes les méthodes (GetAll, GetById, ...) on fait une interface par méthode et l'interface ICRUD implémente toute les méthodes
     // La ligne 19 ressemblerait à: public interface ICrud<TId, TEntity> : IRead, IWrite ...
-    public interface ICrud <TId, TEntity>
+    public interface ICrud<TId, TEntity>
     {
         IEnumerable<TEntity> GetAll();
 

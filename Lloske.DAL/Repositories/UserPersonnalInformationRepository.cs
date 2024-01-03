@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Lloske.DAL.Repositories
 {
-    public class UserPersonnalInformationRepository : IUserPersonnalInformation
+    public class UserPersonnalInformationRepository : IUserPersonnalInformationRepository
     {
         private readonly DbConnection _DbConnection;
         public UserPersonnalInformationRepository(DbConnection dbConnection)

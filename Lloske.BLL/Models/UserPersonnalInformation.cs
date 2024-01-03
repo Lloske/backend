@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lloske.DAL.Entities
+namespace Lloske.BLL.Models
 {
     public class UserPersonnalInformation
     {
@@ -17,6 +17,5 @@ namespace Lloske.DAL.Entities
         public bool Is_in_employee_registrer { get; set; }
         public bool Is_archived { get; set; }
         public string Password_hash { get; set; } = string.Empty;
-        public string Password_salt { get; set; } = string.Empty;
     }
 }

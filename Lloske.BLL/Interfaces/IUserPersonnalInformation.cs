@@ -11,7 +11,7 @@ namespace Lloske.BLL.Interfaces
     {
         public IEnumerable<UserPersonnalInformation> GetAll();
         public UserPersonnalInformation? GetById(int id);
-        public UserPersonnalInformation Insert(UserPersonnalInformation ingredient);
+        public UserPersonnalInformation Create(UserPersonnalInformation ingredient);
         public bool Delete(int id);
     }
 }

@@ -1,0 +1,15 @@
+E:\Code\Lloske\backend\Lloske.BLL\bin\Debug\net6.0\Lloske.BLL.deps.json
+E:\Code\Lloske\backend\Lloske.BLL\bin\Debug\net6.0\Lloske.BLL.dll
+E:\Code\Lloske\backend\Lloske.BLL\bin\Debug\net6.0\Lloske.BLL.pdb
+E:\Code\Lloske\backend\Lloske.BLL\bin\Debug\net6.0\Lloske.DAL.dll
+E:\Code\Lloske\backend\Lloske.BLL\bin\Debug\net6.0\Lloske.DAL.pdb
+E:\Code\Lloske\backend\Lloske.BLL\obj\Debug\net6.0\Lloske.BLL.csproj.AssemblyReference.cache
+E:\Code\Lloske\backend\Lloske.BLL\obj\Debug\net6.0\Lloske.BLL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\Lloske\backend\Lloske.BLL\obj\Debug\net6.0\Lloske.BLL.AssemblyInfoInputs.cache
+E:\Code\Lloske\backend\Lloske.BLL\obj\Debug\net6.0\Lloske.BLL.AssemblyInfo.cs
+E:\Code\Lloske\backend\Lloske.BLL\obj\Debug\net6.0\Lloske.BLL.csproj.CoreCompileInputs.cache
+E:\Code\Lloske\backend\Lloske.BLL\obj\Debug\net6.0\Lloske.BLL.csproj.CopyComplete
+E:\Code\Lloske\backend\Lloske.BLL\obj\Debug\net6.0\Lloske.BLL.dll
+E:\Code\Lloske\backend\Lloske.BLL\obj\Debug\net6.0\refint\Lloske.BLL.dll
+E:\Code\Lloske\backend\Lloske.BLL\obj\Debug\net6.0\Lloske.BLL.pdb
+E:\Code\Lloske\backend\Lloske.BLL\obj\Debug\net6.0\ref\Lloske.BLL.dll

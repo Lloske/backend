@@ -126,9 +126,9 @@ namespace Lloske.DAL.Repositories
                 command.Parameters.Add(paramIs_in_employee_registrer);
 
                 DbParameter paramIs_archived = command.CreateParameter();
-                paramFirstname.ParameterName = "Is_archived";
-                paramFirstname.Value = entity.Is_archived;
-                command.Parameters.Add(paramFirstname);
+                paramIs_archived.ParameterName = "Is_archived";
+                paramIs_archived.Value = entity.Is_archived;
+                command.Parameters.Add(paramIs_archived);
 
                 DbParameter paramPassword_hash = command.CreateParameter();
                 paramPassword_hash.ParameterName = "Password_hash";
@@ -224,9 +224,9 @@ namespace Lloske.DAL.Repositories
                 command.Parameters.Add(paramIs_in_employee_registrer);
 
                 DbParameter paramIs_archived = command.CreateParameter();
-                paramFirstname.ParameterName = "Is_archived";
-                paramFirstname.Value = entity.Is_archived;
-                command.Parameters.Add(paramFirstname);
+                paramIs_archived.ParameterName = "Is_archived";
+                paramIs_archived.Value = entity.Is_archived;
+                command.Parameters.Add(paramIs_archived);
 
                 DbParameter paramPassword_hash = command.CreateParameter();
                 paramPassword_hash.ParameterName = "Password_hash";

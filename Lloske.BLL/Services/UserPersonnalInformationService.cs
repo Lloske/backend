@@ -14,7 +14,7 @@ namespace Lloske.BLL.Services
     public class UserPersonnalInformationService : IUserPersonnalInformation
     {
         private readonly IUserPersonnalInformationRepository _UserPersonnalInformationRepository;
-        public UserPersonnalInformationService (UserPersonnalInformationRepository userPersonnalInformationRepository)
+        public UserPersonnalInformationService (IUserPersonnalInformationRepository userPersonnalInformationRepository)
         {
             _UserPersonnalInformationRepository = userPersonnalInformationRepository;
         }

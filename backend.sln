@@ -5,11 +5,11 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Lloske.DB", "Lloske.DB\Lloske.DB.sqlproj", "{84770CBA-F360-42AB-9611-FF52DE58C815}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lloske.DAL", "Lloske.DAL\Lloske.DAL.csproj", "{3FAF6143-544C-4C78-904D-80E4F4899D51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lloske.DAL", "Lloske.DAL\Lloske.DAL.csproj", "{3FAF6143-544C-4C78-904D-80E4F4899D51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lloske.BLL", "Lloske.BLL\Lloske.BLL.csproj", "{A46476D3-E776-4587-B542-568DFD9B641A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lloske.BLL", "Lloske.BLL\Lloske.BLL.csproj", "{A46476D3-E776-4587-B542-568DFD9B641A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lloske.API", "Lloske.API\Lloske.API.csproj", "{B067869E-66C8-466B-B007-46EA73B28E54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lloske.API", "Lloske.API\Lloske.API.csproj", "{B067869E-66C8-466B-B007-46EA73B28E54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

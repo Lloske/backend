@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Lloske.BLL/1.0.0": {
+        "dependencies": {
+          "Lloske.DAL": "1.0.0"
+        },
+        "runtime": {
+          "Lloske.BLL.dll": {}
+        }
+      },
+      "Lloske.DAL/1.0.0": {
+        "runtime": {
+          "Lloske.DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lloske.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lloske.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

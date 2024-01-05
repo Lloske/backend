@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[user_personnal_information]
 (
-	[Id] UNIQUEIDENTIFIER NOT NULL,
+	[Id] INT NOT NULL IDENTITY,
 	[Firstname] NVARCHAR(100) NOT NULL ,
 	[Lastname] NVARCHAR(100) NOT NULL,
 	[Payroll_identity] INT,

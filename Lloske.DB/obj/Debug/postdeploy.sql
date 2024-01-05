@@ -19,3 +19,4 @@ INSERT INTO [user_personnal_information] ([Id], [Firstname], [Lastname], [Payrol
 	VALUES ( 1, 'Antoine', 'Tilman', 1, 'antoine_tilman@hotmail.com', '+32483458986', 1, 0, 'Test1234=', 'Test1234=');
 SET IDENTITY_INSERT [user_personnal_information] OFF;
 	 
+GO

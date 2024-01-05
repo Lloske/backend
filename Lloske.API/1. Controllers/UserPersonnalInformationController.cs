@@ -82,7 +82,7 @@ namespace Lloske.API.Controllers
                 return BadRequest(ex.Message);
             }
 
-            return deleted ? NoContent() : NotFound("Ingredient not found");
+            return deleted ? NoContent() : NotFound("User not found");
 
             //return StatusCode(StatusCodes.Status501NotImplemented);
         }

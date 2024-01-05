@@ -23,7 +23,7 @@ namespace Lloske.DAL.Repositories
         {
             return new UserPersonnalInformation
             {
-                Id = (Guid)record["Id"],
+                Id = (int)record["Id"],
                 Firstname = (string)record["Firstname"],
                 Lastname = (string)record["Lastname"],
                 Payroll_identity = (int)record["Payroll_identity"],

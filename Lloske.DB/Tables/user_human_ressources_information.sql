@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[user_human_ressources_information]
 (
-	[Id] UNIQUEIDENTIFIER NOT NULL,
+	[Id] INT NOT NULL IDENTITY,
 	[Birthdate] DATE,
 	[Birthplace]  NVARCHAR(100),
 	[Birthland] SMALLINT,
@@ -14,7 +14,7 @@
 	[Bic] NVARCHAR(50),
 	[Social_security_number] INT,
 	[User_note] NVARCHAR(max),
-	[FK_id_user_personnal_information] UNIQUEIDENTIFIER NOT NULL,
+	[FK_id_user_personnal_information] INT NOT NULL,
 	CONSTRAINT PK_User_human_ressources_information PRIMARY KEY ([Id]),
 	CONSTRAINT FK_User_personnal_inforamtion_User_contract_information FOREIGN KEY (FK_id_user_personnal_information) REFERENCES [user_personnal_information]([Id]),
 )

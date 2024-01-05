@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[event_absence]
 (
-	[Id] UNIQUEIDENTIFIER NOT NULL,
+	[Id] INT NOT NULL IDENTITY,
 	[Absence_type] SMALLINT NOT NULL,
 	[Absence_hours] INT NOT NULL,
 	[Absence_note] NVARCHAR(max),

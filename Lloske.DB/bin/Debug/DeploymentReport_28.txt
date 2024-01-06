@@ -1,0 +1,45 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[amendment] (Table)
+       [dbo].[event] (Table)
+       [dbo].[event_absence] (Table)
+       [dbo].[event_team] (Table)
+       [dbo].[MM_job_position_workplaces] (Table)
+       [dbo].[MM_organization_user] (Table)
+       [dbo].[MM_workplaces_user] (Table)
+       [dbo].[organizations] (Table)
+       [dbo].[user_contract_information] (Table)
+       [dbo].[user_human_ressources_information] (Table)
+       [dbo].[user_payroll_data] (Table)
+       [dbo].[user_personnal_information] (Table)
+       [dbo].[workplaces] (Table)
+       [dbo].[workplaces_job_position] (Table)
+       Default Constraint: unnamed constraint on [dbo].[user_personnal_information] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[user_personnal_information] (Default Constraint)
+       [dbo].[FK_Amendment_User_Payroll_Data] (Foreign Key)
+       [dbo].[FK_Event_User_personnal_information] (Foreign Key)
+       [dbo].[FK_Event_Team] (Foreign Key)
+       [dbo].[FK_Event_Event_absence] (Foreign Key)
+       [dbo].[FK_Event_Workplaces] (Foreign Key)
+       [dbo].[FK_MM_job_position_workplaces_job_position] (Foreign Key)
+       [dbo].[FK_MM_job_position_workplaces_workplace_user] (Foreign Key)
+       [dbo].[MM_organization_user_Organizations] (Foreign Key)
+       [dbo].[MM_organization_user_User_personnal_information] (Foreign Key)
+       [dbo].[FK_Workplace_Workplace_user] (Foreign Key)
+       [dbo].[FK_Workplace_user_User_personnal_information] (Foreign Key)
+       [dbo].[FK_User_personnal_information_User_contract_information] (Foreign Key)
+       [dbo].[FK_User_personnal_inforamtion_User_contract_information] (Foreign Key)
+       [dbo].[FK_User_payroll_data_User_personnal_information] (Foreign Key)
+       [dbo].[FK_Workplaces_Organizations] (Foreign Key)
+
+** Supporting actions

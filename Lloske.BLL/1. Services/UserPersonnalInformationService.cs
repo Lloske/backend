@@ -1,15 +1,14 @@
-﻿using Lloske.BLL.Interfaces;
-using Lloske.BLL.Mappers;
-using Lloske.BLL.Models;
-using Lloske.DAL.Interfaces;
-using Lloske.DAL.Repositories;
+﻿using Lloske.BLL._1._1_Interfaces;
+using Lloske.BLL._3._Mappers;
+using Lloske.BLL._2._Models;
+using Lloske.DAL._1._1_Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lloske.BLL.Services
+namespace Lloske.BLL._1._Services
 {
     public class UserPersonnalInformationService : IUserPersonnalInformation
     {

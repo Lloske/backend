@@ -1,7 +1,7 @@
-﻿using Lloske.API.DTOs;
-using Lloske.BLL.Models;
+﻿using Lloske.API._2._DTOs;
+using Lloske.BLL._2._Models;
 
-namespace Lloske.API.Mappers
+namespace Lloske.API._3._Mappers
 {
     public static class UserPersonnalInformationMapper
     {

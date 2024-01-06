@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 /* Alias des classes
  * 
 */
-using Models = Lloske.BLL.Models;
-using Entities = Lloske.DAL.Entities;
+using Models = Lloske.BLL._2._Models;
+using Entities = Lloske.DAL._2._Entities;
 
-namespace Lloske.BLL.Mappers
+namespace Lloske.BLL._3._Mappers
 {
     /* Classe static
      * Une classe static en C# est un type de classe qui ne peut pas être instanciée. 

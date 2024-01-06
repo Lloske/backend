@@ -1,12 +1,11 @@
-﻿using Lloske.API.DTOs;
-using Lloske.API.Mappers;
+﻿using Lloske.API._2._DTOs;
+using Lloske.API._3._Mappers;
 using Lloske.BLL.CustomExeptions;
-using Lloske.BLL.Interfaces;
-using Lloske.BLL.Services;
+using Lloske.BLL._1._1_Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Lloske.API.Controllers
+namespace Lloske.API._1._Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

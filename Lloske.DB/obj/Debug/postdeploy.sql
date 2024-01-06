@@ -16,7 +16,7 @@ DELETE FROM [event_team];
 
 SET IDENTITY_INSERT [user_personnal_information] ON;
 INSERT INTO [user_personnal_information] ([Id], [Firstname], [Lastname], [Payroll_identity], [Email], [Phone], [Is_in_employee_registrer], [Is_archived], [Password_hash], [Password_salt])
-	VALUES ( 1, 'Antoine', 'Tilman', 1, 'antoine_tilman@hotmail.com', '+32483458986', 1, 0, 'Test1234=', 'Test1234=');
+	VALUES ( 1, 'Antoine', 'Tilman', '1', 'antoine_tilman@hotmail.com', '+32483458986', 1, 0, 'Test1234=', 'Test1234=');
 SET IDENTITY_INSERT [user_personnal_information] OFF;
 	 
 SET IDENTITY_INSERT [user_contract_information] ON;

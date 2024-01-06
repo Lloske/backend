@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lloske.DAL.Interfaces
+namespace Lloske.DAL._1._1_Interfaces
 {
     // Interface implémentant les méthodes indispensables à un Crud : Sera pratique pour créer nos Repositories
     // On pourrait aussi, dans un gros projet, pour aller plus loin, faire des interfaces pour IRead (avec juste les Get), ICreate (pour Creation), IUpdate (pour Update), IDelete (pour Delete). Notre ICrud implémenterait toutes ces interfaces.

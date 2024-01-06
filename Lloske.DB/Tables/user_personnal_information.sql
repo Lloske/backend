@@ -3,7 +3,7 @@
 	[Id] INT NOT NULL IDENTITY,
 	[Firstname] NVARCHAR(100) NOT NULL ,
 	[Lastname] NVARCHAR(100) NOT NULL,
-	[Payroll_identity] INT,
+	[Payroll_identity] NVARCHAR(100),
 	[Email] NVARCHAR(125) NOT NULL,
 	[Phone] NVARCHAR(30),
 	[Is_in_employee_registrer] BIT DEFAULT 1,

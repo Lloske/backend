@@ -1,5 +1,5 @@
-﻿using Lloske.DAL.Entities;
-using Lloske.DAL.Interfaces;
+﻿using Lloske.DAL._2._Entities;
+using Lloske.DAL._1._1_Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -9,7 +9,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lloske.DAL.Repositories
+namespace Lloske.DAL._1._Repositories
 {
     public class UserPersonnalInformationRepository : IUserPersonnalInformationRepository
     {
@@ -26,7 +26,7 @@ namespace Lloske.DAL.Repositories
                 Id = (int)record["Id"],
                 Firstname = (string)record["Firstname"],
                 Lastname = (string)record["Lastname"],
-                Payroll_identity = (int)record["Payroll_identity"],
+                Payroll_identity = (string)record["Payroll_identity"],
                 Email = (string)record["Email"],
                 Phone = (string)record["Phone"],
                 Is_in_employee_registrer = (bool)record["Is_in_employee_registrer"],

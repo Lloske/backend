@@ -1,7 +1,7 @@
-using Lloske.BLL.Interfaces;
-using Lloske.BLL.Services;
-using Lloske.DAL.Interfaces;
-using Lloske.DAL.Repositories;
+using Lloske.BLL._1._1_Interfaces;
+using Lloske.BLL._1._Services;
+using Lloske.DAL._1._1_Interfaces;
+using Lloske.DAL._1._Repositories;
 using Microsoft.Data.SqlClient;
 using System.Data.Common;
 

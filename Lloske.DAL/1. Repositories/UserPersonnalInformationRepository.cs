@@ -18,7 +18,6 @@ namespace Lloske.DAL._1._Repositories
         {
             _DbConnection = dbConnection;
         }
-
         public UserPersonnalInformation Mapper(IDataRecord record)
         {
             return new UserPersonnalInformation

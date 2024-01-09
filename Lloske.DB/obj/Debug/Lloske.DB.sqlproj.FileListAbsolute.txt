@@ -8,3 +8,13 @@ E:\Code\Lloske\backend\Lloske.DB\obj\Debug\Model.xml
 E:\Code\Lloske\backend\Lloske.DB\obj\Debug\refactor.xml
 E:\Code\Lloske\backend\Lloske.DB\obj\Debug\postdeploy.sql
 E:\Code\Lloske\backend\Lloske.DB\obj\Debug\predeploy.sql
+C:\Users\Student\Source\Repos\backend\Lloske.DB\bin\Debug\Lloske.DB.dacpac
+C:\Users\Student\Source\Repos\backend\Lloske.DB\bin\Debug\Lloske.DB.dll
+C:\Users\Student\Source\Repos\backend\Lloske.DB\bin\Debug\Lloske.DB.pdb
+C:\Users\Student\Source\Repos\backend\Lloske.DB\obj\Debug\Lloske.DB.sqlproj.AssemblyReference.cache
+C:\Users\Student\Source\Repos\backend\Lloske.DB\obj\Debug\Model.xml
+C:\Users\Student\Source\Repos\backend\Lloske.DB\obj\Debug\refactor.xml
+C:\Users\Student\Source\Repos\backend\Lloske.DB\obj\Debug\postdeploy.sql
+C:\Users\Student\Source\Repos\backend\Lloske.DB\obj\Debug\predeploy.sql
+C:\Users\Student\Source\Repos\backend\Lloske.DB\obj\Debug\Lloske.DB.dll
+C:\Users\Student\Source\Repos\backend\Lloske.DB\obj\Debug\Lloske.DB.pdb

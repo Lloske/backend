@@ -55,7 +55,6 @@ namespace Lloske.DAL._1._Repositories
                 _DbConnection.Close();
             }
         }
-
         public UserPersonnalInformation? GetById(int id)
         {
             UserPersonnalInformation? result = null;
@@ -82,7 +81,6 @@ namespace Lloske.DAL._1._Repositories
 
             return result;
         }
-
         public UserPersonnalInformation Create(UserPersonnalInformation entity)
         {
             UserPersonnalInformation result;
@@ -243,7 +241,5 @@ namespace Lloske.DAL._1._Repositories
                 return nbRowDeleted == 1; // Retourne true si exactement 1 ligne à été supprimée, retourne false sinon
             }
         }
-
-
     }
 }

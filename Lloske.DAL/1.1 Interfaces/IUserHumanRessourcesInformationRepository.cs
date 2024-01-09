@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lloske.DAL._1._1_Interfaces
 {
-    public interface IUserHumanRessourcesInformation : ICrud<int, UserHumanRessourcesInformation>
+    public interface IUserHumanRessourcesInformationRepository : ICrud<int, UserHumanRessourcesInformation>
     {
     }
 }

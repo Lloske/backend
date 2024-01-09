@@ -157,26 +157,6 @@ namespace Lloske.DAL._1._Repositories
             };
             return result;
         }
-
-        public bool Delete(int id)
-        {
-            using (DbCommand command = _DbConnection.CreateCommand())
-            {
-                command.CommandText = "DELETE FROM [user_personnal_information] WHERE [Id] = @Id";
-
-                DbParameter paramId = command.CreateParameter();
-                paramId.ParameterName = "Id";
-                paramId.Value = id;
-                command.Parameters.Add(paramId);
-
-                _DbConnection.Open();
-                int nbRowDeleted = command.ExecuteNonQuery();
-                _DbConnection.Close();
-
-                return nbRowDeleted == 1; // Retourne true si exactement 1 ligne à été supprimée, retourne false sinon
-            }
-        }
-
         public bool Update(int id, UserPersonnalInformation entity)
         {
             using (DbCommand command = _DbConnection.CreateCommand())
@@ -245,5 +225,25 @@ namespace Lloske.DAL._1._Repositories
                 return nbRowUpdated == 1;
             }
         }
+        public bool Delete(int id)
+        {
+            using (DbCommand command = _DbConnection.CreateCommand())
+            {
+                command.CommandText = "DELETE FROM [user_personnal_information] WHERE [Id] = @Id";
+
+                DbParameter paramId = command.CreateParameter();
+                paramId.ParameterName = "Id";
+                paramId.Value = id;
+                command.Parameters.Add(paramId);
+
+                _DbConnection.Open();
+                int nbRowDeleted = command.ExecuteNonQuery();
+                _DbConnection.Close();
+
+                return nbRowDeleted == 1; // Retourne true si exactement 1 ligne à été supprimée, retourne false sinon
+            }
+        }
+
+
     }
 }

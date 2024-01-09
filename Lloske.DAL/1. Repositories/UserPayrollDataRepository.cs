@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lloske.DAL._1._Repositories
 {
-    internal class UserPayrollDataRepository
+    public class UserPayrollDataRepository
     {
+
     }
 }

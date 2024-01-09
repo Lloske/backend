@@ -19,11 +19,11 @@ builder.Services.AddTransient<DbConnection>(service =>
 
 //Service
 
-builder.Services.AddScoped<IUserPersonnalInformation, UserPersonnalInformationService>();
+builder.Services.AddScoped<Lloske.BLL._1._1_Interfaces.IUserPersonnalInformation, UserPersonnalInformationService>();
 
 //Repositories
 
-builder.Services.AddScoped<IUserPersonnalInformationRepository, UserPersonnalInformationRepository>();
+builder.Services.AddScoped<Lloske.DAL._1._1_Interfaces.IUserPersonnalInformationRepository, UserPersonnalInformationRepository>();
 
 
 // Suite

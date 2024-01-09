@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 
 namespace Lloske.BLL._1._Services
 {
-    public class UserPersonnalInformationService : IUserPersonnalInformation
+    public class UserPersonnalInformationService : _1_Interfaces.IUserPersonnalInformation
     {
-        private readonly IUserPersonnalInformationRepository _UserPersonnalInformationRepository;
-        public UserPersonnalInformationService (IUserPersonnalInformationRepository userPersonnalInformationRepository)
+        private readonly DAL._1._1_Interfaces.IUserPersonnalInformationRepository _UserPersonnalInformationRepository;
+        public UserPersonnalInformationService (DAL._1._1_Interfaces.IUserPersonnalInformationRepository userPersonnalInformationRepository)
         {
             _UserPersonnalInformationRepository = userPersonnalInformationRepository;
         }

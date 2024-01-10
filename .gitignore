@@ -15,3 +15,6 @@ Lloske.DB.jfm
 Lloske.DB.dbmdl
 # Perso
 .vs/
+bin/
+obj/
+out/

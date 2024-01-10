@@ -13,7 +13,7 @@ namespace Lloske.BLL._1._Services
     public class UserPersonnalInformationService : _1_Interfaces.IUserPersonnalInformation
     {
         private readonly DAL._1._1_Interfaces.IUserPersonnalInformationRepository _UserPersonnalInformationRepository;
-        public UserPersonnalInformationService (DAL._1._1_Interfaces.IUserPersonnalInformationRepository userPersonnalInformationRepository)
+        public UserPersonnalInformationService(DAL._1._1_Interfaces.IUserPersonnalInformationRepository userPersonnalInformationRepository)
         {
             _UserPersonnalInformationRepository = userPersonnalInformationRepository;
         }

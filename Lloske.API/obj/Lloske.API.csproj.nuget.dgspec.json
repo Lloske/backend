@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Code\\Lloske\\backend\\Lloske.API\\Lloske.API.csproj": {}
+    "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.API\\Lloske.API.csproj": {}
   },
   "projects": {
-    "E:\\Code\\Lloske\\backend\\Lloske.API\\Lloske.API.csproj": {
+    "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.API\\Lloske.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Code\\Lloske\\backend\\Lloske.API\\Lloske.API.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.API\\Lloske.API.csproj",
         "projectName": "Lloske.API",
-        "projectPath": "E:\\Code\\Lloske\\backend\\Lloske.API\\Lloske.API.csproj",
-        "packagesPath": "C:\\Users\\antoi\\.nuget\\packages\\",
-        "outputPath": "E:\\Code\\Lloske\\backend\\Lloske.API\\obj\\",
+        "projectPath": "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.API\\Lloske.API.csproj",
+        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\antoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Code\\Lloske\\backend\\Lloske.BLL\\Lloske.BLL.csproj": {
-                "projectPath": "E:\\Code\\Lloske\\backend\\Lloske.BLL\\Lloske.BLL.csproj"
+              "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.BLL\\Lloske.BLL.csproj": {
+                "projectPath": "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.BLL\\Lloske.BLL.csproj"
               }
             }
           }
@@ -72,21 +73,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Code\\Lloske\\backend\\Lloske.BLL\\Lloske.BLL.csproj": {
+    "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.BLL\\Lloske.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Code\\Lloske\\backend\\Lloske.BLL\\Lloske.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.BLL\\Lloske.BLL.csproj",
         "projectName": "Lloske.BLL",
-        "projectPath": "E:\\Code\\Lloske\\backend\\Lloske.BLL\\Lloske.BLL.csproj",
-        "packagesPath": "C:\\Users\\antoi\\.nuget\\packages\\",
-        "outputPath": "E:\\Code\\Lloske\\backend\\Lloske.BLL\\obj\\",
+        "projectPath": "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.BLL\\Lloske.BLL.csproj",
+        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\antoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,8 +101,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Code\\Lloske\\backend\\Lloske.DAL\\Lloske.DAL.csproj": {
-                "projectPath": "E:\\Code\\Lloske\\backend\\Lloske.DAL\\Lloske.DAL.csproj"
+              "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.DAL\\Lloske.DAL.csproj": {
+                "projectPath": "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.DAL\\Lloske.DAL.csproj"
               }
             }
           }
@@ -131,21 +132,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Code\\Lloske\\backend\\Lloske.DAL\\Lloske.DAL.csproj": {
+    "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.DAL\\Lloske.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Code\\Lloske\\backend\\Lloske.DAL\\Lloske.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.DAL\\Lloske.DAL.csproj",
         "projectName": "Lloske.DAL",
-        "projectPath": "E:\\Code\\Lloske\\backend\\Lloske.DAL\\Lloske.DAL.csproj",
-        "packagesPath": "C:\\Users\\antoi\\.nuget\\packages\\",
-        "outputPath": "E:\\Code\\Lloske\\backend\\Lloske.DAL\\obj\\",
+        "projectPath": "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.DAL\\Lloske.DAL.csproj",
+        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Student\\Source\\Repos\\backend\\Lloske.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\antoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -186,7 +187,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

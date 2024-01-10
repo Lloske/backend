@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="Lloske.DB.dll" />
-			<Metadata Name="FileName" Value="E:\CODE\LLOSKE\BACKEND\LLOSKE.DB\OBJ\DEBUG\LLOSKE.DB.DLL" />
+			<Metadata Name="FileName" Value="C:\USERS\STUDENT\SOURCE\REPOS\BACKEND\LLOSKE.DB\OBJ\DEBUG\LLOSKE.DB.DLL" />
 			<Metadata Name="AssemblyName" Value="Lloske.DB" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="E:\Code\Lloske\backend\Lloske.DB\obj\Debug\Lloske.DB.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Student\Source\Repos\backend\Lloske.DB\obj\Debug\Lloske.DB.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>

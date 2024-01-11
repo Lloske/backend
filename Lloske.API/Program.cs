@@ -19,10 +19,16 @@ builder.Services.AddTransient<DbConnection>(service =>
 
 //Service
 
+builder.Services.AddScoped<Lloske.BLL._1._1_Interfaces.IUserContractInformation, UserContractInformationService>();
+builder.Services.AddScoped<Lloske.BLL._1._1_Interfaces.IUserHumanRessourcesInformation, UserHumanRessourcesInformationService>();
+builder.Services.AddScoped<Lloske.BLL._1._1_Interfaces.IUserPayrollData, UserPayrollDataService>();
 builder.Services.AddScoped<Lloske.BLL._1._1_Interfaces.IUserPersonnalInformation, UserPersonnalInformationService>();
 
 //Repositories
 
+builder.Services.AddScoped<Lloske.DAL._1._1_Interfaces.IUserContractInformationRepository, UserContractInformationRepository>();
+builder.Services.AddScoped<Lloske.DAL._1._1_Interfaces.IUserHumanRessourcesInformationRepository, UserHumanRessourcesInformationRepository>();
+builder.Services.AddScoped<Lloske.DAL._1._1_Interfaces.IUserPayrollDataRepository, UserPayrollDataRepository>();
 builder.Services.AddScoped<Lloske.DAL._1._1_Interfaces.IUserPersonnalInformationRepository, UserPersonnalInformationRepository>();
 
 

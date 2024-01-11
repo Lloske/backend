@@ -26,6 +26,7 @@ namespace Lloske.BLL._3._Mappers
                 Status = entity.Status,
                 Professional_category = entity.Professional_category,
                 Last_medical_checkup_date = entity.Last_medical_checkup_date,
+                FK_id_user_personnal_information = entity.FK_id_user_personnal_information,
             };
         }
 
@@ -44,6 +45,7 @@ namespace Lloske.BLL._3._Mappers
                 Status = model.Status,
                 Professional_category = model.Professional_category,
                 Last_medical_checkup_date = model.Last_medical_checkup_date,
+                FK_id_user_personnal_information = model.FK_id_user_personnal_information,
             };
         }
     }

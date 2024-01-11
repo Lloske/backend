@@ -12,5 +12,6 @@ namespace Lloske.DAL._2._Entities
         public short? Work_time_measurement { get; set; }
         public int? Maximum_contract_hours { get; set; }
         public int? Id_user_personnal_information { get; set; }
+        public int FK_id_user_personnal_information { get; set; }
     }
 }

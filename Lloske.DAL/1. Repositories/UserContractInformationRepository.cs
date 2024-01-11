@@ -33,6 +33,7 @@ namespace Lloske.DAL._1._Repositories
                 Status = (short)record["Status"],
                 Professional_category = (short)record["Professional_category"],
                 Last_medical_checkup_date = (DateTime)record["Last_medical_checkup_date"],
+                FK_id_user_personnal_information = (int)record["FK_id_user_personnal_information"],
             };
         }
         public IEnumerable<UserContractInformation> GetAll()
@@ -60,7 +61,7 @@ namespace Lloske.DAL._1._Repositories
 
             using (DbCommand command = _DbConnection.CreateCommand())
             {
-                command.CommandText = "SELECT * FROM [user_contract_information] WHERE [Id] = @Id";
+                command.CommandText = "SELECT * FROM [user_contract_information] WHERE [FK_id_user_personnal_information] = @Id";
                 DbParameter paramId = command.CreateParameter();
                 paramId.ParameterName = "Id";
                 paramId.Value = id;
@@ -87,9 +88,9 @@ namespace Lloske.DAL._1._Repositories
             using (DbCommand command = _DbConnection.CreateCommand())
             {
                 command.CommandText =
-                    "INSERT INTO [user_contract_information] ([Contract_type], [Employment_type], [Job_title], [Organization_entry_date], [Contract_start], [Probation_end_date], [Contract_end], [Status], [Professional_category], [Last_medical_checkup_date])" +
+                    "INSERT INTO [user_contract_information] ([Contract_type], [Employment_type], [Job_title], [Organization_entry_date], [Contract_start], [Probation_end_date], [Contract_end], [Status], [Professional_category], [Last_medical_checkup_date], [FK_id_user_personnal_information])" +
                     " OUTPUT [inserted].*" +
-                    " VALUES (@Contract_type, @Employment_type, @Job_title, @Organization_entry_date, @Contract_start, @Probation_end_date, @Contract_end, @Status, @Professional_category, @Last_medical_checkup_date)";
+                    " VALUES (@Contract_type, @Employment_type, @Job_title, @Organization_entry_date, @Contract_start, @Probation_end_date, @Contract_end, @Status, @Professional_category, @Last_medical_checkup_date, @FK_id_user_personnal_information)";
 
                 DbParameter paramContract_type = command.CreateParameter();
                 paramContract_type.ParameterName = "Contract_type";
@@ -136,6 +137,16 @@ namespace Lloske.DAL._1._Repositories
                 paramProfessional_category.Value = entity.Professional_category;
                 command.Parameters.Add(paramProfessional_category);
 
+                DbParameter paramLast_medical_checkup_date = command.CreateParameter();
+                paramLast_medical_checkup_date.ParameterName = "Last_medical_checkup_date";
+                paramLast_medical_checkup_date.Value = entity.Last_medical_checkup_date;
+                command.Parameters.Add(paramLast_medical_checkup_date);
+
+                DbParameter paramFK_id_user_personnal_information = command.CreateParameter();
+                paramFK_id_user_personnal_information.ParameterName = "FK_id_user_personnal_information";
+                paramFK_id_user_personnal_information.Value = entity.FK_id_user_personnal_information;
+                command.Parameters.Add(paramFK_id_user_personnal_information);
+
                 _DbConnection.Open();
                 using (DbDataReader reader = command.ExecuteReader())
                 {
@@ -145,10 +156,10 @@ namespace Lloske.DAL._1._Repositories
                     }
                     else
                     {
-                        throw new Exception("Erreur lors de la création de l'utilisateur");
+                        throw new Exception("Erreur lors de la création du contrat de l'utilisateur");
                     }
                 }
-                _DbConnection.Close();
+                _DbConnection.Close(); 
 
             };
             return result;
@@ -168,7 +179,8 @@ namespace Lloske.DAL._1._Repositories
                     "       [Contract_end] = @Contract_end" +
                     "       [Status] = @Status" +
                     "       [Professional_category] = @Professional_category" +
-                    "       [Last_medical_checkup_date] = @Last_medical_checkup_date";
+                    "       [Last_medical_checkup_date] = @Last_medical_checkup_date" +
+                    "       [FK_id_user_personnal_information] = @FK_id_user_personnal_information";
 
                 DbParameter paramContract_type = command.CreateParameter();
                 paramContract_type.ParameterName = "Contract_type";
@@ -215,6 +227,11 @@ namespace Lloske.DAL._1._Repositories
                 paramProfessional_category.Value = entity.Professional_category;
                 command.Parameters.Add(paramProfessional_category);
 
+                DbParameter paramFK_id_user_personnal_information = command.CreateParameter();
+                paramFK_id_user_personnal_information.ParameterName = "FK_id_user_personnal_information";
+                paramFK_id_user_personnal_information.Value = entity.FK_id_user_personnal_information;
+                command.Parameters.Add(paramFK_id_user_personnal_information);
+
                 _DbConnection.Open();
                 int nbRowUpdated = command.ExecuteNonQuery();
                 _DbConnection.Close();
@@ -226,7 +243,7 @@ namespace Lloske.DAL._1._Repositories
         {
             using (DbCommand command = _DbConnection.CreateCommand())
             {
-                command.CommandText = "DELETE FROM [user_contract_information] WHERE [Id] = @Id";
+                command.CommandText = "DELETE FROM [user_contract_information] WHERE [FK_id_user_personnal_information] = @Id";
 
                 DbParameter paramId = command.CreateParameter();
                 paramId.ParameterName = "Id";

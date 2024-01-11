@@ -18,5 +18,6 @@ namespace Lloske.DAL._2._Entities
         public bool? Is_archived { get; set; }
         public string? Password_hash { get; set; }
         public string? Password_salt { get; set; } = string.Empty; // Vérifier comment gérer le salt. Si je le met pas à empty j'ai une erreur
+        public int FK_id_user_personnal_information { get; set; }
     }
 }

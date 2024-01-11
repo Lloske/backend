@@ -15,6 +15,7 @@ namespace Lloske.API._2._DTOs
         public short? Status { get; set; }
         public short? Professional_category { get; set; }
         public DateTime? Last_medical_checkup_date { get; set; }
+        public int FK_id_user_personnal_information { get; set; }
     }
     public class UserContractInformationDataDTO
     {
@@ -30,5 +31,6 @@ namespace Lloske.API._2._DTOs
         public short? Status { get; set; }
         public short? Professional_category { get; set; }
         public DateTime? Last_medical_checkup_date { get; set; }
+        public int FK_id_user_personnal_information { get; set; }
     }
 }

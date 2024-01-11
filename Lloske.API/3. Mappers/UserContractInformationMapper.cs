@@ -21,6 +21,7 @@ namespace Lloske.API._3._Mappers
                 Status = model.Status,
                 Professional_category = model.Professional_category,
                 Last_medical_checkup_date = model.Last_medical_checkup_date,
+                FK_id_user_personnal_information = model.FK_id_user_personnal_information,
             };
         }
         // Un Mapper DTO (API) → Model (BLL)
@@ -39,6 +40,7 @@ namespace Lloske.API._3._Mappers
                 Status = DTO.Status,
                 Professional_category = DTO.Professional_category,
                 Last_medical_checkup_date = DTO.Last_medical_checkup_date,
+                FK_id_user_personnal_information = DTO.FK_id_user_personnal_information,
             };
         }
     }

@@ -22,6 +22,6 @@ namespace Lloske.DAL._2._Entities
         public string? Bic { get; set; }
         public string? Social_security_number { get; set; }
         public string? User_note { get; set; }
-
+        public int FK_id_user_personnal_information { get; set; }
     }
 }

@@ -11,7 +11,8 @@ namespace Lloske.BLL._1._1_Interfaces
     {
         public IEnumerable<UserHumanRessourcesInformation> GetAll();
         public UserHumanRessourcesInformation? GetById(int id);
-        public UserHumanRessourcesInformation Create(UserHumanRessourcesInformation ingredient);
+        public UserHumanRessourcesInformation Create(UserHumanRessourcesInformation userHumanRessourcesInformation);
+        public bool Update(int id, UserHumanRessourcesInformation userHumanRessourcesInformation);
         public bool Delete(int id);
     }
 }

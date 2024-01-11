@@ -11,7 +11,7 @@ namespace Lloske.BLL._1._1_Interfaces
     {
         public IEnumerable<UserPayrollData> GetAll();
         public UserPayrollData? GetById(int id);
-        public UserPayrollData Create(UserPayrollData ingredient);
+        public UserPayrollData Create(UserPayrollData userPayrollData);
         public bool Update(int id, UserPayrollData userPayrollData);
         public bool Delete(int id);
     }

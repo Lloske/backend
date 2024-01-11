@@ -24,7 +24,7 @@ namespace Lloske.API._3._Mappers
             };
         }
         // Un Mapper DTO (API) → Model (BLL)
-        public static UserContractInformation ToModel(this UserContractInformationDTO DTO)
+        public static UserContractInformation ToModel(this UserContractInformationDataDTO DTO)
         {
             return new UserContractInformation
             {

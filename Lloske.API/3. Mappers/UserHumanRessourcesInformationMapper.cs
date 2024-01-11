@@ -27,7 +27,7 @@ namespace Lloske.API._3._Mappers
             };
         }
         // Un Mapper DTO (API) → Model (BLL)
-        public static UserHumanRessourcesInformation ToModel(this UserHumanRessourcesInformationDTO DTO)
+        public static UserHumanRessourcesInformation ToModel(this UserHumanRessourcesInformationDataDTO DTO)
         {
             return new UserHumanRessourcesInformation
             {

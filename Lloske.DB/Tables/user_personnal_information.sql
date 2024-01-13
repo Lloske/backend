@@ -11,4 +11,5 @@
 	[Password_hash] NVARCHAR(max),
 	[Password_salt] NVARCHAR(max),
 	CONSTRAINT PK_User_personnal_information PRIMARY KEY ([Id]),
+	CONSTRAINT UK_User__Email UNIQUE ([Email]), -- UNIQUE permet de mettre une contrainte pour que le nom soit unique. On la nomme en commençant par UK
 )

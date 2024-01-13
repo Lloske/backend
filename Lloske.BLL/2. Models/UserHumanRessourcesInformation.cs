@@ -23,4 +23,13 @@ namespace Lloske.BLL._2._Models
         public string? Social_security_number { get; set; }
         public string? User_note { get; set; }
     }
+    public enum Gender
+    {
+        Masculin = 1,
+        Féminin = 2,
+        Autre = 3
+    }
+
+
+
 }

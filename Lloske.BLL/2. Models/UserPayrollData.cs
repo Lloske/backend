@@ -13,4 +13,10 @@ namespace Lloske.BLL._2._Models
         public int? Maximum_contract_hours { get; set; }
         public int? Id_user_personnal_information { get; set; }
     }
+
+    public enum Work_time_measurement
+    {
+        Standard = 1,
+        DailyRate = 2
+    }
 }

@@ -9,7 +9,7 @@ namespace Lloske.API._2._DTOs
         public string? Birthplace { get; set; }
         public short? Birthland { get; set; }
         public short? Nationality { get; set; }
-        public short? Gender { get; set; }
+        public string? Gender { get; set; }
         public string? Address_street { get; set; }
         public string? Adress_postal_code { get; set; }
         public string? Adress_city { get; set; }
@@ -27,7 +27,7 @@ namespace Lloske.API._2._DTOs
         public string? Birthplace { get; set; }
         public short? Birthland { get; set; }
         public short? Nationality { get; set; }
-        public short? Gender { get; set; }
+        public string? Gender { get; set; }
         public string? Address_street { get; set; }
         public string? Adress_postal_code { get; set; }
         public string? Adress_city { get; set; }

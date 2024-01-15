@@ -80,5 +80,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Lloske.DB.publish.xml" />
+    <None Include="Lloske_technobel.DB.publish.xml" />
   </ItemGroup>
 </Project>

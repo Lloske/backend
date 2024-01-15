@@ -36,6 +36,23 @@ builder.Services.AddScoped<Lloske.DAL._1._1_Interfaces.IUserPersonnalInformation
 
 builder.Services.AddControllers();
 
+//CORS
+
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("DemoCors", config =>
+    {
+        // Tout autoriser
+        config.AllowAnyOrigin();
+        config.AllowAnyHeader();
+        config.AllowAnyMethod();
+
+        // Limiter l'origine de la requete
+        // config.WithOrigins("http://127.0.0.1:5500");
+    });
+});
+
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -53,6 +70,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCors("DemoCors");
 
 app.MapControllers();
 

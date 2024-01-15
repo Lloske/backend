@@ -21,10 +21,10 @@ namespace Lloske.DAL._1._Repositories
         {
             return new UserPayrollData
             {
-                Id = (short)record["Id"],
+                Id = (int)record["Id"],
                 Work_time_measurement = (short)record["Work_time_measurement"],
                 Maximum_contract_hours = (short)record["Maximum_contract_hours"],
-                Id_user_personnal_information = (short)record["Id_user_personnal_information"],
+                Id_user_personnal_information = (int)record["Id_user_personnal_information"],
             };
         }
         public IEnumerable<UserPayrollData> GetAll()

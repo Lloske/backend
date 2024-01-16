@@ -16,7 +16,17 @@ DELETE FROM [event_team];
 
 SET IDENTITY_INSERT [user_personnal_information] ON;
 INSERT INTO [user_personnal_information] ([Id], [Firstname], [Lastname], [Payroll_identity], [Email], [Phone], [Is_in_employee_registrer], [Is_archived], [Password_hash], [Password_salt])
-	VALUES ( 1, 'Antoine', 'Tilman', '1', 'antoine_tilman@hotmail.com', '+32483458986', 1, 0, 'Test1234=', 'Test1234=');
+	VALUES ( 1, 'Antoine', 'Tilman', '1', 'antoine_tilman@hotmail.com', '+32483458986', 1, 0, 'Test1234=', 'Test1234='),
+	       ( 2, 'Jean', 'Dupont', '2', 'jean_dupont@example.com', '0123456789', 1, 0, 'PassHash', 'PassSalt'),
+           ( 3, 'Marie', 'Martin', '3', 'marie_martin@example.com', '0123456789', 1, 0, 'PassHash', 'PassSalt'),
+           ( 4, 'Pierre', 'Dubois', '4', 'pierre_dubois@example.com', '0123456789', 1, 0, 'PassHash', 'PassSalt'),
+           ( 5, 'Sophie', 'Lambert', '5', 'sophie_lambert@example.com', '0123456789', 1, 0, 'PassHash', 'PassSalt'),
+           ( 6, 'Émilie', 'Leclerc', '6', 'emilie_leclerc@example.com', '0123456789', 1, 0, 'PassHash', 'PassSalt'),
+           ( 7, 'Alexandre', 'Moreau', '7', 'alexandre_moreau@example.com', '0123456789', 1, 0, 'PassHash', 'PassSalt'),
+           ( 8, 'François', 'Mercier', '8', 'francois_mercier@example.com', '0123456789', 1, 0, 'PassHash', 'PassSalt'),
+           ( 9, 'Charlotte', 'Roussel', '9', 'charlotte_roussel@example.com', '0123456789', 1, 0, 'PassHash', 'PassSalt'),
+           ( 10, 'Louis', 'Fournier', '10', 'louis_fournier@example.com', '0123456789', 1, 0, 'PassHash', 'PassSalt'),
+           ( 11, 'Margaux', 'Girard', '11', 'margaux_girard@example.com', '0123456789', 1, 0, 'PassHash', 'PassSalt');
 SET IDENTITY_INSERT [user_personnal_information] OFF;
 	 
 SET IDENTITY_INSERT [user_contract_information] ON;

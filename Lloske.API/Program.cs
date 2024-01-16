@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 //DbConnection
 builder.Services.AddTransient<DbConnection>(service =>
 {
-    string connectionString = builder.Configuration.GetConnectionString("Technobel");
+    string connectionString = builder.Configuration.GetConnectionString("Default");
     return new SqlConnection(connectionString);
 });
 
@@ -38,19 +38,19 @@ builder.Services.AddControllers();
 
 //CORS
 
-builder.Services.AddCors(opt =>
-{
-    opt.AddPolicy("DemoCors", config =>
-    {
-        // Tout autoriser
-        config.AllowAnyOrigin();
-        config.AllowAnyHeader();
-        config.AllowAnyMethod();
+//builder.Services.AddCors(opt =>
+//{
+//    opt.AddPolicy("DemoCors", config =>
+//    {
+//        // Tout autoriser
+//        config.AllowAnyOrigin();
+//        config.AllowAnyHeader();
+//        config.AllowAnyMethod();
 
-        // Limiter l'origine de la requete
-        // config.WithOrigins("http://127.0.0.1:5500");
-    });
-});
+//        // Limiter l'origine de la requete
+//        // config.WithOrigins("http://127.0.0.1:5500");
+//    });
+//});
 
 
 
@@ -71,7 +71,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.UseCors("DemoCors");
+app.UseCors(o => o.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
 app.MapControllers();
 

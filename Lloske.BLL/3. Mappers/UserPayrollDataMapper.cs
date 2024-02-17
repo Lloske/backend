@@ -11,6 +11,7 @@ namespace Lloske.BLL._3._Mappers
 {
     public static class UserPayrollDataMapper
     {
+        // Utilisez le modificateur static pour déclarer un membre statique, qui appartient au type lui-même plutôt qu’à un objet spécifique.
         public static Models.UserPayrollData ToModel(this Entities.UserPayrollData entity)
         {
             return new Models.UserPayrollData
@@ -21,6 +22,7 @@ namespace Lloske.BLL._3._Mappers
                 Id_user_personnal_information = entity.Id_user_personnal_information,
             };
         }
+        // Utilisez le modificateur static pour déclarer un membre statique, qui appartient au type lui-même plutôt qu’à un objet spécifique.
         public static Entities.UserPayrollData ToEntity(this Models.UserPayrollData model)
         {
             return new Entities.UserPayrollData

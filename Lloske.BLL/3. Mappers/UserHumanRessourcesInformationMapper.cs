@@ -11,6 +11,7 @@ namespace Lloske.BLL._3._Mappers
 {
     public static class UserHumanRessourcesInformationMapper
     {
+        // Utilisez le modificateur static pour déclarer un membre statique, qui appartient au type lui-même plutôt qu’à un objet spécifique.
         public static Models.UserHumanRessourcesInformation ToModel(this Entities.UserHumanRessourcesInformation entity)
         {
             return new Models.UserHumanRessourcesInformation
@@ -31,7 +32,7 @@ namespace Lloske.BLL._3._Mappers
                 User_note = entity.User_note,
             };
         }
-
+        // Utilisez le modificateur static pour déclarer un membre statique, qui appartient au type lui-même plutôt qu’à un objet spécifique.
         public static Entities.UserHumanRessourcesInformation ToEntity(this Models.UserHumanRessourcesInformation model)
         {
             return new Entities.UserHumanRessourcesInformation

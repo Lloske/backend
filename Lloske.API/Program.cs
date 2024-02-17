@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 //DbConnection
 builder.Services.AddTransient<DbConnection>(service =>
 {
-    string connectionString = builder.Configuration.GetConnectionString("Default");
+    string connectionString = builder.Configuration.GetConnectionString("Home");
     return new SqlConnection(connectionString);
 });
 

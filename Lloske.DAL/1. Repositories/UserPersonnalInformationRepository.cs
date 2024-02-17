@@ -80,80 +80,6 @@ namespace Lloske.DAL._1._Repositories
 
             return result;
         }
-        public UserPersonnalInformation Create(UserPersonnalInformation entity)
-        {
-            UserPersonnalInformation result;
-
-            using (DbCommand command = _DbConnection.CreateCommand())
-            {
-                // L'id n'est pas ajouté. Voir comment faire avec GUID et si auto incrémentation est ok
-                command.CommandText =
-                    "INSERT INTO [user_personnal_information] ([Firstname], [Lastname], [Payroll_identity], [Email], [Phone], [Is_in_employee_registrer], [Is_archived], [Password_hash], [Password_salt])" +
-                    " OUTPUT [inserted].*" +
-                    " VALUES (@Firstname, @Lastname, @Payroll_identity, @Email, @Phone, @Is_in_employee_registrer, @Is_archived, @Password_hash, @Password_salt)";
-
-                DbParameter paramFirstname = command.CreateParameter();
-                paramFirstname.ParameterName = "Firstname";
-                paramFirstname.Value = entity.Firstname;
-                command.Parameters.Add(paramFirstname);
-
-                DbParameter paramLastname = command.CreateParameter();
-                paramLastname.ParameterName = "Lastname";
-                paramLastname.Value = entity.Lastname;
-                command.Parameters.Add(paramLastname);
-
-                DbParameter paramPayroll_identity = command.CreateParameter();
-                paramPayroll_identity.ParameterName = "Payroll_identity";
-                paramPayroll_identity.Value = entity.Payroll_identity;
-                command.Parameters.Add(paramPayroll_identity);
-
-                DbParameter paramEmail = command.CreateParameter();
-                paramEmail.ParameterName = "Email";
-                paramEmail.Value = entity.Email;
-                command.Parameters.Add(paramEmail);
-
-                DbParameter paramPhone = command.CreateParameter();
-                paramPhone.ParameterName = "Phone";
-                paramPhone.Value = entity.Phone;
-                command.Parameters.Add(paramPhone);
-
-                DbParameter paramIs_in_employee_registrer = command.CreateParameter();
-                paramIs_in_employee_registrer.ParameterName = "Is_in_employee_registrer";
-                paramIs_in_employee_registrer.Value = entity.Is_in_employee_registrer;
-                command.Parameters.Add(paramIs_in_employee_registrer);
-
-                DbParameter paramIs_archived = command.CreateParameter();
-                paramIs_archived.ParameterName = "Is_archived";
-                paramIs_archived.Value = entity.Is_archived;
-                command.Parameters.Add(paramIs_archived);
-
-                DbParameter paramPassword_hash = command.CreateParameter();
-                paramPassword_hash.ParameterName = "Password_hash";
-                paramPassword_hash.Value = entity.Password_hash;
-                command.Parameters.Add(paramPassword_hash);
-
-                DbParameter paramPassword_salt = command.CreateParameter();
-                paramPassword_salt.ParameterName = "Password_salt";
-                paramPassword_salt.Value = entity.Password_salt;
-                command.Parameters.Add(paramPassword_salt);
-
-                _DbConnection.Open();
-                using (DbDataReader reader = command.ExecuteReader())
-                {
-                    if (reader.Read())
-                    {
-                        result = Mapper(reader);
-                    }
-                    else
-                    {
-                        throw new Exception("Erreur lors de la création de l'utilisateur");
-                    }
-                }
-                _DbConnection.Close();
-
-            };
-            return result;
-        }
         public bool Update(int id, UserPersonnalInformation entity)
         {
             using (DbCommand command = _DbConnection.CreateCommand())
@@ -239,6 +165,79 @@ namespace Lloske.DAL._1._Repositories
 
                 return nbRowDeleted == 1; // Retourne true si exactement 1 ligne à été supprimée, retourne false sinon
             }
+        }
+        public UserPersonnalInformation Create(UserPersonnalInformation entity)
+        {
+            UserPersonnalInformation result;
+
+            using (DbCommand command = _DbConnection.CreateCommand())
+            {
+                command.CommandText =
+                    "INSERT INTO [user_personnal_information] ([Firstname], [Lastname], [Payroll_identity], [Email], [Phone], [Is_in_employee_registrer], [Is_archived], [Password_hash], [Password_salt])" +
+                    " OUTPUT [inserted].*" +
+                    " VALUES (@Firstname, @Lastname, @Payroll_identity, @Email, @Phone, @Is_in_employee_registrer, @Is_archived, @Password_hash, @Password_salt)";
+
+                DbParameter paramFirstname = command.CreateParameter();
+                paramFirstname.ParameterName = "Firstname";
+                paramFirstname.Value = entity.Firstname;
+                command.Parameters.Add(paramFirstname);
+
+                DbParameter paramLastname = command.CreateParameter();
+                paramLastname.ParameterName = "Lastname";
+                paramLastname.Value = entity.Lastname;
+                command.Parameters.Add(paramLastname);
+
+                DbParameter paramPayroll_identity = command.CreateParameter();
+                paramPayroll_identity.ParameterName = "Payroll_identity";
+                paramPayroll_identity.Value = entity.Payroll_identity;
+                command.Parameters.Add(paramPayroll_identity);
+
+                DbParameter paramEmail = command.CreateParameter();
+                paramEmail.ParameterName = "Email";
+                paramEmail.Value = entity.Email;
+                command.Parameters.Add(paramEmail);
+
+                DbParameter paramPhone = command.CreateParameter();
+                paramPhone.ParameterName = "Phone";
+                paramPhone.Value = entity.Phone;
+                command.Parameters.Add(paramPhone);
+
+                DbParameter paramIs_in_employee_registrer = command.CreateParameter();
+                paramIs_in_employee_registrer.ParameterName = "Is_in_employee_registrer";
+                paramIs_in_employee_registrer.Value = entity.Is_in_employee_registrer;
+                command.Parameters.Add(paramIs_in_employee_registrer);
+
+                DbParameter paramIs_archived = command.CreateParameter();
+                paramIs_archived.ParameterName = "Is_archived";
+                paramIs_archived.Value = entity.Is_archived;
+                command.Parameters.Add(paramIs_archived);
+
+                DbParameter paramPassword_hash = command.CreateParameter();
+                paramPassword_hash.ParameterName = "Password_hash";
+                paramPassword_hash.Value = entity.Password_hash;
+                command.Parameters.Add(paramPassword_hash);
+
+                DbParameter paramPassword_salt = command.CreateParameter();
+                paramPassword_salt.ParameterName = "Password_salt";
+                paramPassword_salt.Value = entity.Password_salt;
+                command.Parameters.Add(paramPassword_salt);
+
+                _DbConnection.Open();
+                using (DbDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        result = Mapper(reader);
+                    }
+                    else
+                    {
+                        throw new Exception("Erreur lors de la création de l'utilisateur");
+                    }
+                }
+                _DbConnection.Close();
+
+            };
+            return result;
         }
     }
 }

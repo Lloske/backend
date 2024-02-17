@@ -11,6 +11,7 @@ namespace Lloske.BLL._3._Mappers
 {
     public static class UserContractInformationMapper
     {
+        // Utilisez le modificateur static pour déclarer un membre statique, qui appartient au type lui-même plutôt qu’à un objet spécifique.
         public static Models.UserContractInformation ToModel(this Entities.UserContractInformation entity)
         {
             return new Models.UserContractInformation
@@ -29,7 +30,7 @@ namespace Lloske.BLL._3._Mappers
                 FK_id_user_personnal_information = entity.FK_id_user_personnal_information,
             };
         }
-
+        // Utilisez le modificateur static pour déclarer un membre statique, qui appartient au type lui-même plutôt qu’à un objet spécifique.
         public static Entities.UserContractInformation ToEntity(this Models.UserContractInformation model)
         {
             return new Entities.UserContractInformation

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lloske.BLL.CustomExeptions
 {
-    public class NotFoundException
+    public class NotFoundException : Exception
     {
+        public NotFoundException(string? Message) : base(Message)
+        {
+
+        }
     }
 }

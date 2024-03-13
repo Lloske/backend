@@ -5,6 +5,7 @@ using Lloske.BLL._1._1_Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using static System.Net.WebRequestMethods;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace Lloske.API._1._Controllers
 {
@@ -70,9 +71,10 @@ namespace Lloske.API._1._Controllers
         [ProducesResponseType(204)] // No Content
         [ProducesResponseType(404, Type = typeof(string))] // Not found
         [ProducesResponseType(405, Type = typeof(string))] // Method not allowed
-        public IActionResult Update([FromRoute] int userId, [FromBody] UserPersonnalInformationDataDTO userPersonnalInformation)
+        public IActionResult UpdatePartial([FromRoute] int userId, [FromBody] UserPersonnalInformationDataDTO updatedData)
         {
-            UserPersonnalInformationDTO result = _UserPersonnalInformationService.Update(userId, userPersonnalInformation.ToModel()).ToDTO();
+            bool updated = _UserPersonnalInformationService.Update(userId, updatedData.ToModel());
+            return Ok(updated);
         }
 
 

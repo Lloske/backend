@@ -85,7 +85,7 @@ namespace Lloske.DAL._1._Repositories
             using (DbCommand command = _DbConnection.CreateCommand())
             {
                 command.CommandText =
-                    "UPDATE FROM [user_personnal_information]" +
+                    "UPDATE [user_personnal_information]" +
                     "SET    [Firstname] = @Firstname" +
                     "       [Lastname] = @Lastname" +
                     "       [Payroll_identity] = @Payroll_identity" +
@@ -94,7 +94,8 @@ namespace Lloske.DAL._1._Repositories
                     "       [Is_in_employee_registrer] = @Is_in_employee_registrer" +
                     "       [Is_archived] = @Is_archived" +
                     "       [Password_hash] = @Password_hash" +
-                    "       [Password_salt] = @Password_salt";
+                    "       [Password_salt] = @Password_salt" +
+                    " WHERE [Id] = @[Id]";
 
                 DbParameter paramFirstname = command.CreateParameter();
                 paramFirstname.ParameterName = "Firstname";

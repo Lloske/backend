@@ -32,9 +32,9 @@ namespace Lloske.BLL._1._Services
         {
             return _UserPersonnalInformationRepository.Create(userPersonnalInformation.ToEntity()).ToModel();
         }
-        public bool Update(int id, UserPersonnalInformation userPersonnalInformation)
+        public bool Update(int userId, UserPersonnalInformation userPersonnalInformation)
         {
-            bool updated = _UserPersonnalInformationRepository.Update(id, userPersonnalInformation.ToEntity());
+            bool updated = _UserPersonnalInformationRepository.Update(userId, userPersonnalInformation.ToEntity());
             return updated;
         }
         public bool Delete(int id)
